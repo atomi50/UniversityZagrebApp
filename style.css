@@ -7,9 +7,15 @@
 
 a {
   text-decoration: none;
-  color: white;
 }
 
+ul {
+  list-style: none;
+}
+
+i {
+  color: white;
+}
 ::placeholder {
   color: white;
 }
@@ -31,9 +37,11 @@ header {
   justify-content: space-around;
   align-items: flex-end;
 }
+.navbar a {
+  color: white;
+}
 
 .navbar ul {
-  list-style: none;
   display: flex;
   align-items: flex-end;
 }
@@ -77,6 +85,7 @@ header {
   background: #6e6e6e;
   border: none;
 }
+
 input:focus::placeholder {
   color: transparent;
 }
@@ -85,14 +94,37 @@ input:focus::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .navbar__search button {
-  font-size: 30px;
+  font-size: 20px;
+  padding: 7px;
+  margin-bottom: 10px;
+  background: #4e4d4d;
+  border: none;
+  cursor: pointer;
 }
 
 input:focus {
   outline: none;
   border: 1px solid white;
   color: white;
+}
+
+.header__upper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px;
+}
+
+.navigation ul {
+  display: flex;
+}
+
+.navigation ul li {
+  font-size: 0.9rem;
+  margin-left: 5px;
+  padding-right: 5px;
+  color: black;
 }
