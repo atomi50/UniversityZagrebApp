@@ -7,6 +7,11 @@
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 ul {
@@ -44,6 +49,7 @@ header {
 }
 .navbar a {
   color: white;
+  text-decoration: none !important;
 }
 
 .navbar ul {
@@ -175,6 +181,7 @@ input:focus {
   margin-right: 20px;
   margin-bottom: -1px;
   color: black;
+  text-decoration: none !important;
 }
 
 .showcase__content {
@@ -206,18 +213,23 @@ input:focus {
 }
 
 .srce__news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-bottom: 70px;
 }
 
-.srce__news h2 {
+.srce__news a {
   font-size: 45px;
+  font-weight: 700;
   color: rgb(230, 44, 44);
   border-bottom: 3px solid rgb(220, 31, 31);
   text-align: center;
   margin-top: -10px;
+  text-decoration: none !important;
 }
 
-.srce__news span {
+.srce__news a span {
   color: black;
 }
 
@@ -276,11 +288,200 @@ input:focus {
 .srce__webinars {
   position: relative;
 }
+.srce__webinars h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.srce__webinars span {
+  color: red;
+  font-size: 2rem;
+  font-weight: 900;
+}
 
 #triangle {
+  position: absolute;
+  top: 10px;
+  right: 175px;
   height: 0px;
   width: 0px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid red;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  margin-top: 70px;
+  background-color: #c4bebe;
+}
+
+.footer__contacts {
+  padding-left: 120px;
+  width: 50%;
+  background: #e0dddd;
+}
+.footer__contacts ul {
+  height: 100%;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+}
+.footer__contacts ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.footer__contacts ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.footer__contacts ul li i {
+  padding: 0 10px;
+  font-size: 40px;
+  color: black;
+}
+
+.footer__contacts ul li i:hover,
+.footer__social__media ul li i:hover {
+  color: crimson;
+  transform: scale(1.1);
+}
+
+.footer__social__media {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding-right: 120px;
+  background: #d4d0d0;
+}
+
+.footer__social__media ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social__media h3 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 0 15px;
+  margin-right: 10px;
+}
+
+.footer__social__media ul li i {
+  padding: 0 20px;
+  font-size: 40px;
+  color: black;
+}
+
+.footer__main {
+  height: 480px;
+  background: rgb(71, 69, 69);
+}
+
+.footer__links {
+  height: 80px;
+  background: black;
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  padding: 50px 130px;
+}
+
+.footer__main__image h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.footer__main__most__searched h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.footer__main__most__searched ul li {
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+
+.footer__main__contact h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+.footer__main__contact a {
+  display: inline-block;
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+
+.footer__main__contact p {
+  color: white;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.footer__handshake__image {
+  font-size: 40px;
+  color: white;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+#handshake__image {
+  text-decoration: none;
+}
+
+.footer__main__about h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+.footer__main__about a {
+  font-size: 14px;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.footer__main__about img {
+  padding: 20px;
+}
+
+.footer__links {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__links ul {
+  display: flex;
+}
+
+.footer__links ul li {
+  padding: 0 20px;
+}
+
+.footer__links ul li a {
+  color: gray;
+  text-transform: uppercase;
+}
+.footer__links ul span {
+  color: gray;
 }
