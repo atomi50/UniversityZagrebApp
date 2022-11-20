@@ -38,6 +38,7 @@ ul {
 header {
   background: #4e4d4d;
   height: 78px;
+  width: 100vw;
 }
 /* Class to activate the navigation tabs, append classes with Javascript*/
 .active {
@@ -482,6 +483,9 @@ input:focus {
 .footer__links ul span {
   color: gray;
 }
+.hamburger__button {
+  display: none;
+}
 
 /*
 MEDIA QUERIES Large Screen ( 1000 px )
@@ -489,7 +493,9 @@ MEDIA QUERIES Large Screen ( 1000 px )
 
 @media screen and (max-width: 1000px) {
   header {
-    height: 150px;
+    position: absolute;
+    width: 100vw;
+    min-height: 150px;
   }
   .navbar {
     display: flex;
@@ -586,5 +592,130 @@ MEDIA QUERIES Large Screen ( 1000 px )
   .footer__main__about,
   .footer__main__contact {
     padding-top: 30px;
+  }
+
+  .hamburger__button {
+    display: none;
+  }
+}
+
+/* Media Mobile below 768px */
+
+@media screen and (max-width: 768px) {
+  header {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 80px;
+  }
+
+  .header__upper {
+    padding-top: 100px;
+  }
+
+  .header__upper ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .showcase__main {
+    margin: 0;
+  }
+  .showcase__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .showcase__navigation a {
+    width: 100%;
+    text-align: center;
+    padding: none !important;
+    margin-right: 0;
+    margin-bottom: 10px;
+    border: 2px solid black;
+  }
+
+  .hamburger__button {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .fa-bars {
+    font-size: 40px;
+    color: white;
+  }
+  .navbar__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-top: 12px;
+  }
+
+  .footer__main {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+  .srce__news {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px;
+  }
+
+  .srce__news a {
+    font-size: 3rem !important;
+  }
+
+  .srce__webinars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .srce__webinars h2,
+  .srce__webinars span {
+    font-size: 3rem !important;
+  }
+
+  .footer__contacts ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .footer__contacts ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-bottom: 20px;
+  }
+
+  .footer__social__media ul,
+  .footer__main,
+  .footer__links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__social__media ul li {
+    padding-bottom: 10px;
+  }
+
+  .footer__links {
+    height: 200px;
   }
 }
